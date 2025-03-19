@@ -17,13 +17,13 @@ from camel.messages import BaseMessage
 import asyncio
 from crawl4ai import AsyncWebCrawler, CacheMode
 
-client_id = "YOUR_CLIENT_ID" 
-client_secret = "YOUR_CLIENT_SECTET"
+client_id = "dingi1yzricklujz9rji" 
+client_secret = "8NHYRiKFqxzpE4b9uHIvrEKtDNr6WBD_jEzlMM1AzR-_WaF32KchG2VSNOrkKYcB"
 
 qwen_model = ModelFactory.create(
             model_platform=ModelPlatformType.OPENAI_COMPATIBLE_MODEL,
             model_type="Qwen/Qwen2.5-32B-Instruct",
-            api_key="YOUR_API",
+            api_key="9b16f530-adcd-4711-a998-20e070d1265d",
             url="https://api-inference.modelscope.cn/v1",
             model_config_dict=QwenConfig(temperature=0.2).as_dict(),
         )
