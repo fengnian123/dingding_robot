@@ -34,7 +34,7 @@ agent = ChatAgent(
         )
 async def search():
     async with AsyncWebCrawler(verbose=True) as crawler:
-        result = await crawler.arun(url="https://help.aliyun.com/zh/model-studio/getting-started/what-is-model-studio?spm=a2c4g.11186623.help-menu-2400256.d_0_0.41f9253asmiZKt&scm=20140722.H_2579562._.OR_help-T_cn~zh-V_1")
+        result = await crawler.arun(url="https://www.runoob.com/html/html-intro.html")
         # Soone will be change to result.markdown
         return result
     
