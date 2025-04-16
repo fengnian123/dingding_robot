@@ -29,7 +29,7 @@ class mychatBot_Handler(dingtalk_stream.ChatbotHandler):
         agent.update_memory(knowledge_message, "user")
         assistant_response = agent.step(incoming_message.text.content)
         res_content = assistant_response.msgs[0].content
-        self.reply_markdown(res_content, incoming_message)
+        self.reply_markdown("", res_content, incoming_message)
         return AckMessage.STATUS_OK, 'OK'
  
  
